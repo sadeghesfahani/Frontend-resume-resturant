@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body class="rtl bg-color">
+<div id="background" class="modal-background d-none flex align-center justify-center">
+    <div id="modal" class="modal d-none flex flex-column rounded-16 align-center justify-center space-around">
+        <p>سفارش شما با موفقیت ثبت شد</p>
+
+        <div id="ok" class="ok bg-color rounded-4 pointer">
+            باشه
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <main class="flex space-around gap-30 align-item-start justify-self-center flex-wrap">
+
+        <section class="flex flex-column rounded-16 bg-menu overflow-hidden min-width-280 w-full max-width-900 m-10">
+            <div class="title flex justify-center p-10">
+                <p class="bold font-24">رستوران مک دونالد شعبه اندیشه</p>
+            </div>
+            <div id="menu" class="menu flex flex-wrap gap-20">
+
+                <div id="item-1" class="item">
+                    <div class="item-image-container">
+                        <img src="asset/image/hamburger.png" alt="" class="img-item">
+                    </div>
+                    <div class="item-information">
+                        <div class="item-title">همبرگر معمولی</div>
+                        <div class="item-price">۸۰۰۰ تومان</div>
+                        <div class="item-operation-container">
+                            <div class="item-operators flex">
+                                <div class="item-increase-button">
+
+                                </div>
+                                <div class="item-number-input">
+                                    0
+                                </div>
+                                <div class="item-decrease-button">
+
+                                </div>
+                            </div>
+                            <div class="item-total-price">
+                                ۰ تومان
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--                <div id="item-2" class="item">-->
+                <!--                    <div class="item-image-container">-->
+                <!--                        <img src="asset/image/hamburger.png" alt="" class="img-item">-->
+                <!--                    </div>-->
+                <!--                    <div class="item-information">-->
+                <!--                        <div class="item-title">همبرگر معمولی</div>-->
+                <!--                        <div class="item-price">۸۰۰۰ تومان</div>-->
+                <!--                        <div class="item-operation-container">-->
+                <!--                            <div class="item-operators flex">-->
+                <!--                                <div class="item-increase-button">-->
+
+                <!--                                </div>-->
+                <!--                                <div class="item-number-input">-->
+                <!--                                    0-->
+                <!--                                </div>-->
+                <!--                                <div class="item-decrease-button">-->
+
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="item-total-price">-->
+                <!--                                ۰ تومان-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                    </div>-->
+                <!--                </div>-->
+
+
+                <!--                <div id="item-3" class="item">-->
+                <!--                    <div class="item-image-container">-->
+                <!--                        <img src="asset/image/hamburger.png" alt="" class="img-item">-->
+                <!--                    </div>-->
+                <!--                    <div class="item-information">-->
+                <!--                        <div class="item-title">همبرگر معمولی</div>-->
+                <!--                        <div class="item-price">۸۰۰۰ تومان</div>-->
+                <!--                        <div class="item-operation-container">-->
+                <!--                            <div class="item-operators flex">-->
+                <!--                                <div class="item-increase-button">-->
+
+                <!--                                </div>-->
+                <!--                                <div class="item-number-input">-->
+                <!--                                    0-->
+                <!--                                </div>-->
+                <!--                                <div class="item-decrease-button">-->
+
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="item-total-price">-->
+                <!--                                ۰ تومان-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+
+                <!--                    </div>-->
+                <!--                </div>-->
+
+
+            </div>
+        </section>
+
+        <section class="flex flex-column rounded-16 bg-menu m-10">
+            <div class="submit p-10">
+                <div class="total-price flex space-between">
+                    <p>جمع کل سفارشات:</p>
+                    <p id="total-price">0 تومان</p>
+                </div>
+                <div class="total-price flex space-between">
+                    <p>حل سرویس و کارمزد:</p>
+                    <p id="service-price">0 تومان</p>
+                </div>
+                <div class="total-price flex space-between">
+                    <p>تخفیف:</p>
+                    <p id="off">0 تومان</p>
+                </div>
+                <div class="coupon-container">
+                    <input id="coupon-text" type="text" placeholder="کد تخفیف" size="30">
+                    <div id="coupon-button" class="button-left-rounded">
+
+                    </div>
+
+                </div>
+                <div class="flex space-between rounded-4 bg-yellow p-5  mt-30">
+                    <p class="bold">مبلغ قابل پرداخت:</p>
+                    <div id="total-to-pay">۰ تومان</div>
+                </div>
+
+                <div id="finish" class="flex justify-center align-center bg-color rounded-4 pointer h-50">
+                    <p>ثبت سفارش</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</div>
+<script src="./asset/js/main.js" type="module"></script>
+</body>
+</html>
