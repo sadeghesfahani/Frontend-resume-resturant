@@ -1,0 +1,134 @@
+.item {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    /*width:400px;*/
+    height: 100px;
+    min-width: 300px;
+    /*max-width:600px;*/
+    transition: all 0.1s;
+    box-shadow: 0 2px 2px 1px #e4f1fb
+}
+
+
+.item:hover {
+    transform: scale(1.005);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5)
+}
+
+
+.item .item-image-container {
+    display: flex;
+    width: 100px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.item .item-image-container .img-item {
+    width: 100%;
+    /* height 100% is here to make it exactly like the picture, I personally won't use it in my work */
+    height: 100%;
+}
+
+
+.item-increase-button {
+    width: 20px;
+    background-color: red;
+    background-image: url('../image/add.png');
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+.item-decrease-button {
+    width: 20px;
+    background-color: red;
+    background-image: url('../image/minus.png');
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.item-number-input {
+    width: 25px;
+    text-align: center;
+}
+
+
+.item-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 10px
+}
+
+
+.item-operation-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-title {
+    font-weight: bold;
+}
+
+
+.menu {
+    /*width: 100%;*/
+    min-width: 350px;
+    flex-grow: 1;
+    background-color: #F0F9FF;
+    padding: 20px 40px;
+}
+
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /*align-items: flex-start;*/
+    width: 280px;
+    /*height:500px;*/
+}
+
+.max-width-900 {
+    max-width: 900px;
+}
+
+
+.modal {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    z-index: 2;
+
+}
+
+
+.ok {
+    width: 50px;
+    text-align: center;
+    z-index: 2;
+}
+
+.modal-background{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    overflow: hidden;
+    z-index: 1;
+}

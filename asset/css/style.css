@@ -1,0 +1,68 @@
+@import "components.css";
+@import "utils.css";
+
+@font-face {
+    font-family: vazir;
+    src: url("../fonts/Vazir-Regular-FD.woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url("../fonts/Vazir-Variable.woff");
+    font-weight: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: vazir, serif;
+}
+
+main {
+    max-width: 1440px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-left-rounded {
+    background-color: red;
+    height: 25px;
+    position: absolute;
+    width:25px;
+    top: 0;
+    left:0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-image: url("../image/tick.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.coupon-container{
+    padding-right: 6px;
+    position: relative;
+    background-color:white;
+    height:25px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+input{
+    border: none;
+    outline: none;
+
+}
+
+.title{
+    border-bottom: 3px solid #e4f1fb;
+}
+
